@@ -1,0 +1,522 @@
+body,html{margin:0 auto;padding:0 auto;background-color:#ededea;}
+.wrapper{float:none;min-width:1140px;padding:0 auto;}
+.pagecenter{margin:0 auto;max-width:1200px;width:100%;}
+
+.strtupp_body {
+    overflow-y: hidden;
+}
+
+.strtup_header {
+    float: left;
+    width: 100%;background:#ededea;
+    
+}
+.strtup_header_left p {
+    margin: 0.4em 0em 0em 2em;
+    font-size: 34px;
+    font-weight: bold;
+    width: 12%;
+}
+
+.strtup_header_left {
+    float: left;background: #471a72;
+color: white;
+    width: 40%;
+}
+
+.strtup_header_right {
+    float: right;
+    width: 45%;
+    text-align: center;
+    padding: 1em 0em;
+}
+
+.menu_strtup_list li {
+    display: inline;
+}
+
+
+.menu_strtup_list1 li {
+    display: inline;
+    padding-right: 5px;
+}
+
+.menu_strtup_list {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding: 0;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+.menu_strtup_list1 li a:hover {
+    background: black;
+    color: white;
+}
+
+
+
+.menu_strtup_list1 li a {
+    border: 1px solid white;
+    color: white;
+    padding: 0.7em 0.8em;
+    border-radius: 50%;
+}
+
+
+
+.strtup_content {
+    float: left;
+    width: 100%;background:#ededea;
+}
+
+
+/*.strtup_content_left img {
+    width: 70%;
+    position: relative;
+    top: -2em;height:480px;
+    left: 18em;
+}
+*/
+.cta1 {
+    text-align: center;
+    padding: 12px 10px;
+    width: 30%;
+    background: #471a72;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.menu_pic {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.menu_strtup_list1 {
+    padding: 0;
+    margin-left: 5em;
+}
+
+/*.strtup_content_box img {
+    position: absolute;
+    top: 10em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    vertical-align: middle;
+    float: none;
+    max-width: 50%;
+    width: 100%;
+}*/
+
+.strtup_content_box {
+    width: 65%;
+    position: relative;
+    top: 1em;
+    background: white;
+        background-color: white;
+    left: 21em;height: 210px;
+    background-color: white;
+    box-shadow: 0px 0px 25px 0px rgba(13, 29, 13, 0.1);
+    padding: 5em 0em 5em 0em;
+    text-align: center;
+}
+
+.menu_strtup_list1 h5 {
+    color: white;
+}
+
+
+.strtup_content_right h5 {
+    text-align: center;
+    color: #471a72;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.lnkdicon {
+    width: 6%;
+    vertical-align: bottom;
+    padding: 0px 10px;
+}
+
+
+/*.strtup_content_box {
+    width: 70%;
+    position: relative;
+    top: -2em;
+    height: 480px;background:white;
+    left: 18em;background-color: white;
+box-shadow: 0px 0px 25px 0px rgba(13, 29, 13, 0.1);
+}*/
+
+
+.strtup_content_left {
+    float: left;padding:0em 0em 5em 0em;
+    width: 40%;background:#471a72;
+    text-align: left;
+}
+.strtup_content_right p {
+    font-family: Roboto;
+    line-height: 1.9;
+    width: 70%;
+    font-size: 17px;
+}
+
+
+.strtup_content_right h1 {
+    font-size: 85px;
+    padding: 10px 0px;
+    margin: 0;color:#471a72;
+}
+
+.cta1 i {
+    margin-left: 10px;
+}
+
+.strtup_content_right h3 {
+    font-size: 32px;
+    font-family: Lato;
+    font-weight: 700;
+}
+
+.strtup_content_right {
+    float: right;padding:0em 0em 4em 0em;
+    width: 45%;
+    text-align: left;
+}
+
+.strtup_content_box p {
+    font-family: Roboto;
+}
+
+.ciiclogonew {
+width: 150px;}
+
+
+
+
+.menu_strtup_list1 li a i {
+    width: 15px;
+    height: 16px;
+}
+
+.menu_strtup_list li a {
+    color: black;font-style: italic;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-right: 1em;
+}
+
+
+
+/* Style the tabstrp9 */
+.tabstrp9 {
+  overflow: hidden;
+  
+  background-color: transparent;
+}
+
+/* Style the buttons inside the tabstrp9 */
+.tabstrp9 button {
+   
+    float: left;background:transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #471a72;
+    font-family: Roboto;
+}
+
+/* Change background color of buttons on hover */
+.tabstrp9 button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tabstrp9link class */
+.tabstrp9 button.active {
+    background-color: transparent;
+    border-bottom: 3px solid #471a72;
+}
+
+/* Style the tabstrp9 content */
+.tabstrp9content {
+  display: none;
+  padding: 6px 12px;
+  
+  border-top: none;
+}
+
+.strpup_logopic {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** responsive code **/
+
+
+
+
+
+@media (max-width:1140px){
+	.wrapper{float:none;min-width:100%;}
+	
+.strtup_header_left {
+    float: left;
+    background: #471a72;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 3em 0em;
+}
+
+
+
+.strtup_header_left p {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0 auto;width:100%;
+}
+
+.strtup_header_right {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0em 0em;
+}
+
+.strtup_content_right h1 {
+    font-size: 74px;
+    padding: 10px 0px;
+    margin: 0;
+    color: #471a72;
+}
+
+.strtup_content_left {
+    float: left;
+    padding: 0em 0em 2.5em 0em;
+    width: 100%;
+    background: #471a72;
+    text-align: center;
+}
+
+.strtup_content_box {
+    width: 70%;
+    position: relative;
+    top: 2em;
+    background: white;
+        background-color: white;
+    background-color: white;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 0px 25px 0px rgba(13, 29, 13, 0.1);
+    padding: 5em 0em 5em 0em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.strtupp_body {
+     overflow-y: scroll;
+}
+
+.strtup_content_right {
+    float: left;
+    padding: 4em 0em 4em 0em;
+    width: 97%;
+    text-align: center;
+}
+
+.strtup_content_right p {
+    font-family: Roboto;
+    line-height: 1.9;
+    width: 100%;
+    font-size: 17px;
+}
+
+.menu_strtup_list1 {
+    padding: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+.cta1 {
+    text-align: center;
+    padding: 15px 25px;
+    width: auto;
+    background: #471a72;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+
+.menu_pic {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 3em 0em 0em 0em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+	.wrapper{float:none;min-width:100%;}
+	
+.strtup_header_left {
+    float: left;
+    background: #471a72;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 3em 0em;
+}
+
+
+
+.strtup_header_left p {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0 auto;width:100%;
+}
+
+.strtup_header_right {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0em 0em;
+}
+
+.strtup_content_right h1 {
+    font-size: 74px;
+    padding: 10px 0px;
+    margin: 0;
+    color: #471a72;
+}
+
+.strtup_content_left {
+    float: left;
+    padding: 0em 0em 2.5em 0em;
+    width: 100%;
+    background: #471a72;
+    text-align: center;
+}
+
+.strtup_content_box {
+    width: 70%;
+    position: relative;
+    top: 2em;
+    background: white;
+        background-color: white;
+    background-color: white;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 0px 25px 0px rgba(13, 29, 13, 0.1);
+    padding: 5em 0em 5em 0em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.strtupp_body {
+     overflow-y: scroll;
+}
+
+.strtup_content_right {
+    float: left;
+    padding: 4em 0em 4em 0em;
+    width: 97%;
+    text-align: center;
+}
+
+.strtup_content_right p {
+    font-family: Roboto;
+    line-height: 1.9;
+    width: 100%;
+    font-size: 17px;
+}
+
+.menu_strtup_list1 {
+    padding: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+.cta1 {
+    text-align: center;
+    padding: 15px 25px;
+    width: auto;
+    background: #471a72;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+
+.menu_pic {
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 3em 0em 0em 0em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+

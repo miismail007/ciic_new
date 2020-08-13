@@ -1,0 +1,1055 @@
+
+
+<!DOCTYPE html>
+<html >
+   <head>
+      <meta charset="UTF-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      <title>CIIC</title>
+      <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+      <script src="js/perfectpc.js" type="text/javascript"></script>
+      <style>
+      </style>
+   </head>
+   <body>
+         <style>
+
+.icon-bar {
+  position: fixed;z-index:999;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+</style>
+<style type="text/css">
+
+
+.container {
+  font-family: 'Roboto',sans-serif;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.pricing-table {
+  /*box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);*/
+  box-shadow: 0px 0px 10px 5px #d1d1d1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+
+.pricing-table * {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+  padding: 25px;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 25px 25px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+   width: 100px;
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #471A72;
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: #666666;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 50px 0 25px;
+  padding: 0
+}
+
+.pricing-features-item {
+  border-top: 1px solid #d1d1d1;
+  font-size: 12px;
+  list-style: none;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+  color: #016FF9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348EFE;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: #fff;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:active {
+  background-color: #269aff;
+}
+</style>
+<style>
+#mySidenavshr a {
+    position: absolute;
+    left: -150px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 170px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenavshr a:hover {
+  left: 0;width:40px;
+}
+
+#aboutshr {
+  top: 20px;
+  background-color:  #00acee;
+}
+
+#blogshr {
+  top: 80px;
+  background-color: #0e76a8;
+}
+
+#projectsshr {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contactshr{
+  top: 200px;
+  background-color: #4aca59;
+}
+
+#contact1shr{
+  top: -40px;
+  background-color: #3b5998;
+}
+
+.newfb {
+    float: right;
+}
+</style>
+<style type="text/css">
+  .button_blue{
+    background: #471A72;
+    color: #fff;
+    border: 1px solid #471A72;border-radius: 5px;
+    display: inline-block;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0 28px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+  }
+</style>
+      <div class="icon-bar">
+
+  
+  <div id="mySidenavshr" class="sidenavshr">
+   <a href="#" id="contact1shr"> <span class="newfb"><i class="fa fa-facebook"></i></span> </a>
+  <a href="#" id="aboutshr">   <span class="newfb"><i class="fa fa-twitter"></i></span>  </a>
+  <a href="#" id="blogshr"><span class="newfb"><i class="fa fa-linkedin"></i></span> </a>
+  <a href="#" id="projectsshr"> <span class="newfb"><i class="fa fa-instagram"></i></span> </a>
+  
+
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+      <style type="text/css">
+        .scroll-to-top{
+          width: 45px;
+    height: 45px;
+    background: #d1d1d1;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    text-align: center;
+    transition: all .4s ease;
+        }
+        .scroll-to-top i {
+    font-size: 18px;
+    line-height: 45px;
+    color: #000;
+}
+      </style>
+      <script type="text/javascript">
+        $(document).ready(function() {
+
+    $('#scroll-top').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+
+});
+      </script>
+      <a href="#" id="scroll-top" data-target="html" class="scroll-to-target scroll-to-top" style="display: block;"><i class="fa fa-angle-up"></i></a>
+      <div class="wrapper">
+         <div class="header">
+            <div class="pagecenter123">
+               <div class="header_logonw">
+                  <img class="newdesign_logo" src="images/indexlogo23.PNG"/   >
+               </div>
+               <div class="header_menunw">
+                  <div class="topnavnw" id="myTopnavnw">
+                     <a href="#home" class="active">About</a>
+                     <a href="team.html">Team</a>
+                     <a href="ourstartups.html">Our Startups</a>
+                     <div class="dropdownnw">
+                        <button class="dropbtnnw">Centre of Excellence 
+                        <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdownnw-contentnw">
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/life.png"></div><a href="centre_of_life_sciences.html">Centre for Life Sciences</a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/printer.png"></div><a href="Centre for Smart Manufacturing.html">Centre for Smart Manufacturing</a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/innovation.png"></div><a href="apj_innovation_centre.html">APJ Abdul Kalam centre for Innovation</a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/patent.png"></div><a href="Intellectual_Property_Rights_Cell.html">Centre for Intellectual Property Rights</a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/teaching.png"></div><a href="centre_for_business_mentoring.html">Centre for Business Coaching & Mentoring</a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/entreprenuer.png"></div><a href="entrepreneurship_development_cell.html">Centre for Entrepreneurship Development</a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/teaching.png"></div><a href="centre_teaching.html">Centre for Innovation in Teaching and Learning </a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/concrete.png"></div><a href="centre_for_corrosion_control.html" style="width: 350px;">Centre for Prevention and Control of Corrosion in Concrete Structures</a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/pose.png"></div><a href="#">Centre for Unnat Bharat Abhiyam</a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/satelite.png"></div><a href="#">Centre for Remote Sensing and GIS</a></div>
+                           <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: flex-start;"><div style="width: 50px;display: flex;flex-wrap: wrap;justify-content: center;"><img style="height:25px;padding: 10px;margin-left: 10px;" src="images/excellence/technology.png"></div><a href="#">Centre for Technology Transfer</a></div>
+                        </div>
+                     </div>
+                     <a href="ciicbenefits.html">Benefits</a>
+                     <a href="events.html">Events</a>
+                     <a href="naac.html">NAAC</a>
+                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="herosectionnw">
+            <div class="pagecenter123">
+               <div class="herosectionnw_left">
+                  <h3>startup is our heart</h3>
+               </div>
+               <div class="herosectionnw_right">
+                  <div class="update_group_combined">
+                     <div class="update_group">
+                        <div class="update_group_video">
+                           <div class="container123">
+                              <img src="images/logo.png" alt="Snow">
+                              <button class="btn" id="myBtnnw"><i class="fa fa-play-circle"></i></button>
+                              <div id="myModalnw" class="modalnw">
+                                 <!-- Modal content -->
+                                 <div class="modalnw-content">
+                                    <span class="close">&times;</span>
+                                    <p><iframe class="video_frame_nw" src="https://www.youtube.com/embed/eUnWhA7dJMo">
+                                       </iframe>
+                                       <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/eUnWhA7dJMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                    </p>
+                                    <!--<p><iframe class="video_frame_nw" src="https://www.youtube.com/embed/rTjkv-afrss" allowfullscreen="" frameborder="0"></iframe></p>-->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="update_group_news">
+                           <div class="slideshow-containernw">
+                              <div class="mySlidesnw">
+                                 <div class="mySlidesnw_textnw">
+                                    <h4><i class="fa fa-caret-right"></i> News Updates</h4>
+                                    <h6>May 21,2020</h6>
+                                    <p>online class and online test schedule of CIIC</p>
+                                 </div>
+                              </div>
+                              <div class="mySlidesnw">
+                                 <div class="mySlidesnw_textnw">
+                                    <h4><i class="fa fa-caret-right"></i> News Updates</h4>
+                                    <h6>June 22,2020</h6>
+                                    <p>workshop by vistaconvert</p>
+                                 </div>
+                              </div>
+                              <div class="mySlidesnw">
+                                 <div class="mySlidesnw_textnw">
+                                    <h4><i class="fa fa-caret-right"></i> News Updates</h4>
+                                    <h6>July 21,2020</h6>
+                                    <p>online class and online test schedule of CIIC</p>
+                                 </div>
+                              </div>
+                              <div class="arrrow_nw_clknw">
+                                 <a class="prevnw" onclick="plusSlides(-1)">❮</a>
+                                 <a class="nextnw" onclick="plusSlides(1)">❯</a>
+                              </div>
+                           </div>
+                           <div class="dotnw-container">
+                              <span class="dotnw" onclick="currentSlide(1)"></span> 
+                              <span class="dotnw" onclick="currentSlide(2)"></span> 
+                              <span class="dotnw" onclick="currentSlide(3)"></span> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="section_one_nw">
+            <div class="pagecenter">
+               <div class="section_one_nw_title">
+                  
+                  <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: center;">
+                  <div style="width: 70%; border-radius: 6px;box-shadow: 0px 0px 10px 5px #d1d1d1;font-family: 'Roboto' , sans-serif; border:1px solid #d1d1d1;">
+                    <div style="padding:20px 50px; line-height: 40px;">
+                      <h3>About </h3>
+                    <!-- <p>A place for learning , discovery , innovation , expression and discourse </p> -->
+                    <p style="color: #666666;font-family: 'Roboto' , sans-serif;font-size: 18px;text-align: justify;
+                      line-height: 30px;">Crescent Innovation & Incubation Council (CIIC) has been established as a Section-8 not for profit company and will act as a “One Stop Shop – Technology Business Incubator (TBI)” for Start-ups. CIIC facilitates entrepreneurial & innovative ecosystem to all the stakeholders including the students, faculty, industry, investors and society at large.</p>
+                      <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: space-around;">
+                       <a href="https://drive.google.com/file/d/1osQkWjMAGvn3aGoLCRIn4T-O8xpl0Kjy/view" target="_blank"><button class="button_blue">Incubation Policy</button></a>
+                                        <a href="https://drive.google.com/file/d/1Sd2v4EIPXF49v8ltJDe8eUuTyhi1c0DE/view" target="_blank"><button class="button_blue">IPR Policy</button></a>
+                                        <a href="#" target="_blank"><button class="button_blue">Faculty Policy</button></a>
+                       </div>
+                     </div>
+                 </div>
+               </div>
+               </div>
+               <div style="width: 49%; height: 500px; border-radius: 6px;box-shadow: 0px 0px 10px 5px #d1d1d1;font-family: 'Roboto', sans-serif; float: left;border:1px solid #d1d1d1;">
+                  <div style="padding:20px 50px; line-height: 40px;">
+                     <h3 style="margin: 0;text-align: center;color: #471A72">Vision</h3>
+                     <p style="color: #666666">To become a University based Technological Business Incubator of Excellence with national & international allusion parameter in</p>
+                     <ul style="padding-left: 20px ;color:#666666;text-align: justify;">
+                        <li>Support & render start-up into a profitable entity.</li>
+                        <li>Transform innovation into scalable business models with high productive impact and also encouraging interdisciplinary advancement.</li>
+                        <li>To create impact for economic development and community wealth.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div style="width: 49%; height: 500px; border-radius: 6px;box-shadow: 0px 0px 10px 5px #d1d1d1;font-family: 'Roboto', sans-serif; float: right;border:1px solid #d1d1d1;">
+                  <div style="padding:20px 50px; line-height: 30px;">
+                     <h3 style="margin: 0;text-align: center;color: #471A72">Mission</h3>
+                     <ul style="padding-left: 20px;color: #666666;text-align: justify;">
+                        <li>Nurture students, faculty, and alumni through entrepreneurial training for recognizing early stage start-ups.</li>
+                        <li>Creating and promoting collaborative networks through partnerships between academia, industry, government.</li>
+                        <li>Increasing and advancing methods and in-house operational skills for leveraging entrepreneurial expertise and resource network</li>
+                        <li>Identify & nurture top-notch entrepreneurs in Life Science and Industry 4.0 through expertise mentoring and also foster lean start-ups to sustainable companies.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="section_one_nw">
+            <div class="pagecenter">
+               <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: center;">
+                 <div style="width: 55%;  border-radius: 6px;box-shadow: 0px 0px 10px 5px #d1d1d1;font-family: 'Roboto', sans-serif; float: left;border:1px solid #d1d1d1;">
+                  <div style="padding:20px 50px; line-height: 40px;">
+                     <h3 style="margin: 0;text-align: center;color: #471A72">Values</h3>
+                     <p style="color: #666666">Nurture our society by nudging the entrepreneurs with</p>
+                     <ul style="padding-left: 20px ;color:#666666;text-align: justify;">
+                        <li>Integrity</li>
+                        <li>Sustainability</li>
+                        <li>Culture of innovation</li>
+                        <li>Without any barriers.</li>
+                     </ul>
+                     
+                  </div>
+               </div>
+               </div>
+            </div>
+         </div>
+               <div class="aboutus_split_group">
+                  <div class="aboutus_split_group_left">
+                     <div class="about_split_top">
+                        <div class="about_split_top1  countcheck">
+                           <h4>Applied</h4>
+                           <h6 class="count" data-count = 200>0</h6>
+                        </div>
+                        <div class="about_split_top1  countcheck" id="about_center_line">
+                           <h4>Startups</h4>
+                           <h6 class="count" data-count = 61>0</h6>
+                        </div>
+                        <div class="about_split_top1  countcheck">
+                           <h4>Mentors</h4>
+                           <h6 class="count" data-count = 25>0</h6>
+                        </div>
+                     </div>
+                     <div class="about_split_bottom">
+                        <div class="about_split_bottom1 countcheck">
+                           <h4>Awards</h4>
+                           <h6 class="count" data-count = 10>0</h6>
+                        </div>
+                        <div class="about_split_bottom1" id="split_bottom_line">
+                           <h4>Get Incubated</h4>
+                           <a href="contact_temp.html"><button class="button_blue">Apply now</button></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="aboutus_split_group_right">
+                     <img src="images/slider2.jpg"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+            <div class="pagecenter">
+               
+            </div>
+            
+            <div class="section_one_nw" style="background-color: #edecea;margin-top: 80px">
+            <div class="pagecenter">
+               <div class="section_one_nw_title" style="color: #353535">
+                  <h3 style="margin: 0">Why CIIC </h3>
+               </div>
+               <div class="aboutus_split_group">
+                  <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: space-around;margin-bottom: 50px;">
+                     <div>
+                        <div style="float: left;font-size: 30px;margin-right: 20px;margin-top: 0;color: #353535"><i class="fa fa-map-marker" ></i></div>
+                        <div style="float: right;
+                                     font-size: 20px;
+                                     color: #353535;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     display: block;">
+                           <h3 style="margin: 0;">Central Location</h3>
+                        </div>
+                     </div>
+                     <div>
+                        <div style="float: left;font-size: 30px;margin-right: 20px;margin-top: 0;color: #353535"><i class="fa fa-calendar" ></i></div>
+                        <div style="float: right;
+                                     font-size: 20px;
+                                     color: #353535;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     display: block;">
+                           <h3 style="margin: 0;">Meeting Room</h3>
+                        </div>
+                     </div>
+                     <div>
+                        <div style="float: left;font-size: 30px;margin-right: 20px;margin-top: 0;color: #353535"><i class="fas fa-money-check" ></i></div>
+                        <div style="float: right;
+                                     font-size: 20px;
+                                     color: #353535;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     display: block;">
+                           <h3 style="margin: 0;">Access To Funding</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div style="display: flex;flex-wrap: wrap;align-content: center;justify-content: space-around;">
+                     <div>
+                        <div style="float: left;font-size: 30px;margin-right: 20px;margin-top: 0;color: #353535"><i class="fa fa-industry" ></i></div>
+                        <div style="float: right;
+                                     font-size: 20px;
+                                     color: #353535;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     display: block;">
+                           <h3 style="margin: 0;">Industry Connect</h3>
+                        </div>
+                     </div>
+                     <div>
+                        <div style="float: left;font-size: 30px;margin-right: 20px;margin-top: 0;color: #353535"><i class="fa fa-users" ></i></div>
+                        <div style="float: right;
+                                     font-size: 20px;
+                                     color: #353535;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     display: block;">
+                           <h3 style="margin: 0;">Incubation Network</h3>
+                        </div>
+                     </div>
+                     <div>
+                        <div style="float: left;font-size: 30px;margin-right: 20px;margin-top: 0;color: #353535"><i class="fas fa-people-arrows" ></i></div>
+                        <div style="float: right;
+                                     font-size: 20px;
+                                     color: #353535;
+                                     font-weight: 600;
+                                     text-transform: capitalize;
+                                     display: block;">
+                           <h3 style="margin: 0;">Investors Connect</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="section_one_nw">
+            <div class="pagecenter">
+               <div class="section_one_nw_title" style="color: #353535">
+                  <h3 style="margin: 0">Services</h3>
+               </div>
+               <div class="aboutus_split_group">
+                  <div class="container">
+                   <div class="panel pricing-table">
+                     
+                     <div class="pricing-plan">
+                       <img src="images/service1.png" alt="" class="pricing-img">
+                       <h2 class="pricing-header">Trust Areas</h2>
+                       <ul class="pricing-features">
+                         <li class="pricing-features-item">Life Sciences<br><p style="font-weight: 100">(Agri-Tech, Med -Tech, Healthcare, Nano-Tech, Food-Tech, CleanTech & WASH)</p></li>
+                         <li class="pricing-features-item">Industry 4.0<br><p style="font-weight: 100">(IOT/ AI/ ML, Edu-Tech, Safety & Energy, AR/VR, Cyber Security, Smart Manufacturing)</p></li>
+                         <li class="pricing-features-item">Emerging Areas<br><p style="font-weight: 100">(5G / Fintech /Mobility & Transportation)</p></li>
+                       </ul>
+                       
+                       
+                     </div>
+                     
+                     <div class="pricing-plan">
+                       <img src="images/service2.png" alt="" class="pricing-img">
+                       <h2 class="pricing-header">Facilities</h2>
+                       <ul class="pricing-features">
+                         <li class="pricing-features-item">Office Space/ Lab Space</li>
+                         <li class="pricing-features-item">Marketing Services</li>
+                         <li class="pricing-features-item">Training & Workshops / Seminars</li>
+                         <li class="pricing-features-item">Legal Services / IPR Services</li>
+                         <li class="pricing-features-item">Connect With Investors</li>
+                         <li class="pricing-features-item">Access To Seed Funding</li>
+                         <li class="pricing-features-item">Industry Connect</li>
+                       </ul>
+                       
+                       
+                     </div>
+                     
+                     <div class="pricing-plan">
+                       <img src="images/service3.png" alt="" class="pricing-img">
+                       <h2 class="pricing-header">ENTREPRENEURSHIP COURSES</h2>
+                       <ul class="pricing-features">
+                         <li class="pricing-features-item">Social Entrepreneurship</li>
+                         <li class="pricing-features-item">Life Science Innovation & Entrepreneurship</li>
+                         <li class="pricing-features-item">Leadership & CEO Training</li>
+                       </ul>
+                       
+                       
+                     </div>
+                     
+                   </div>
+                 </div>
+               </div>
+            </div>
+         </div>
+         <div class="section_two_nw" style="margin-top: 30px;">
+            <div class="pagecenter">
+               <div class="section_two_nw_left">
+                  <div class="section_ihub_group">
+                     <h4>startup hub</h4>
+                     <p>Crescent Innovation & Incubation Council (CIIC) has been established as a Section-8 not for profit company and will act as a “One Stop Shop – Technology Business Incubator (TBI)” for Start-ups. CIIC facilitates entrepreneurial & innovative ecosystem to all the stakeholders including the students, faculty, industry, investors and society at large.</p>
+                  </div>
+               </div>
+               <div class="section_two_nw_right">
+                  <div class="section_two_nw_right_title">
+                     <h5></h5>
+                     <p></p>
+                  </div>
+                  <div class="section_two_nw_right_news">
+                     <img src="images/yourstorynew.jpg"></img>
+                     <p>"Ranked as 4th BioIncubator in India" by leading Life Sciences Magazine Bio Spectrum</p>
+                     <a class="tournw"><i class="fa fa-chevron-circle-right"></i>360<sup>0</sup> virtual tour</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="section_infrastr_nw" style="display:none;">
+            <div class="pagecenter">
+               <div class="section_infrastr_nw_left">
+               </div>
+               <div class="section_infrastr_nw_right">
+                  <h4>Great Infrastructure</h4>
+                  <div class="section_infrastr_box">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="section_three_nw">
+            <div class="pagecenter">
+               <div class="govt_partner_group">
+
+
+<h3>partners</h3>
+
+				  
+				  <div class="section_partners_edit_combined">
+				  <div class="section_partners_left_edit">
+				  
+				  <h4>Government</h4>
+                           <img src="images/partner/goverticon.png"></img>
+				  
+				  
+				  
+				  </div>
+                  <div class="section_three_nw_govt">
+                     <div class="section_three_govt_box">
+                        <ul class="section_three_nw_govt_top">
+                           <li><img src="images/partner/govt1.png" id="part_pic_edit"></img></li>
+                           <li><img style="" src="images/partner/govt2.png"></img></li>
+                           <li><img style="" src="images/partner/govt3.png"></img></li>
+                           <li><img style="    " src="images/partner/govt4.png"></img></li>
+                           <li id="right_line"><img src="images/partner/govt5.png"></img></li>
+                        </ul>
+                     </div>
+                     <div class="section_three_govt_box">
+                        <ul class="section_three_nw_govt_top" style="margin-left: 180px;">
+                           <li><img style="" src="images/partner/govt6.png"></img></li>
+                           <li><img src="images/partner/govt7.png" style="" id="part_pic_edit"></img></li>
+                           <li><img style="   " src="images/partner/govt8.png"></img></li>
+                           <li><img style="   " src="images/partner/govt9.png"></img></li>
+                        </ul>
+                     </div>
+                     <div class="section_three_govt_box">
+                        <ul class="section_three_nw_govt_top">
+                        </ul>
+                     </div>
+                  </div>
+				  
+				  </div>
+				  
+				  
+				  <!-- ecosystem starts-->
+				  
+				  
+				   <div class="section_partners_edit_combined">
+				  <div class="section_partners_left_edit">
+				  
+				  <h4>Ecosystem</h4>
+                           <img src="images/partner/goverticon.png"></img>
+				  
+				  
+				  
+				  </div>
+                  <div class="section_three_nw_govt">
+                     <div class="section_three_govt_box">
+                          <ul class="section_three_nw_govt_top" >
+                           <li><img src="images/partner/able.png" id="part_pic_edit"></li>
+                           <li><img src="images/partner/iit_center.png"></li>
+                           <li><img src="images/partner/mehata_hospital.jpg"></li>
+                           <li><img src="images/partner/ccamp.png"></li>
+                           <li id="right_line"><img src="images/partner/venture center.jpg"></li>
+                        </ul>
+                     </div>
+                     <div class="section_three_govt_box">
+                        <ul class="section_three_nw_govt_top" style="margin-left: 250px;">
+                           <li><img src="images/partner/KIIT.png"></li>
+                           <li><img src="images/partner/chettinad.png" id="part_pic_edit" style="width: 100%"></li>
+                           <li><img src="images/partner/Nativelead.png"></li>
+                        </ul>
+                     </div>
+                     <div class="section_three_govt_box">
+                        <ul class="section_three_nw_govt_top">
+                        </ul>
+                     </div>
+                  </div>
+				  
+				  </div>
+				  
+				  
+				  
+				  
+				  <!-- investors starts-->
+				  
+				  <div class="section_partners_edit_combined">
+				  <div class="section_partners_left_edit" id="investors_height_edit">
+				  
+				  <h4>Investors</h4>
+                           <img src="images/partner/goverticon.png"></img>
+				  
+				  
+				  
+				  </div>
+                  <div class="section_three_nw_govt">
+                     <div class="section_three_govt_box">
+                       <ul class="section_three_nw_govt_top">
+                           <li><img src="images/partner/chennaiangels1.png" id="part_pic_edit"></li>
+                           <li><img src="images/partner/letsventure.png"></li>
+                           <li><img src="images/partner/mountjudi.png"></li>
+                           <li><img src="images/partner/ivca.png"></li>
+                           <li id="right_line"><img src="images/partner/keiretsu.png"></li>
+                        </ul>
+                     </div>
+                     
+                     <div class="section_three_govt_box">
+                        <ul class="section_three_nw_govt_top">
+                        </ul>
+                     </div>
+                  </div>
+				  
+				  </div>
+				  
+				  
+				  
+				  <!-- investors starts-->
+				  
+				  <div class="section_partners_edit_combined">
+				  <div class="section_partners_left_edit">
+				  
+				  <h4>Business</h4>
+                           <img src="images/partner/goverticon.png"></img>
+				  
+				  
+				  
+				  </div>
+                  <div class="section_three_nw_govt">
+                     <div class="section_three_govt_box">
+                      <ul class="section_three_nw_govt_top">
+                           <li><img src="images/partner/CII-Logo.jpg" id="part_pic_edit"></li>
+                           <li><img src="images/partner/tie.png"></li>
+                           <li><img src="images/partner/finpreneur.jpg"></li>
+                           <li><img src="images/partner/wadhwani.png"></li>
+                           <li id="right_line"><img src="images/partner/finovista.jpg"></li>
+                        </ul>
+                     </div>
+                     
+                     <div class="section_three_govt_box">
+                        <ul class="section_three_nw_govt_top">
+                          <li><img src="images/partner/ynos.png" id="part_pic_edit"></li>
+                           <li><img src="images/partner/fcci_flo.png"></li>
+                           <li><img src="images/partner/pmi.png"></li>
+                           <li><img src="images/partner/msg91.png"></li>
+                           <li id="right_line"><img src="images/partner/quadriga.PNG"></li>
+                        </ul>
+                     </div>
+                  </div>
+				  
+				  </div>
+				  
+				   
+				  <!-- investors starts-->
+				  
+				  <div class="section_partners_edit_combined">
+				  <div class="section_partners_left_edit">
+				  
+				  <h4>International</h4>
+                           <img src="images/partner/goverticon.png"></img>
+				  
+				  
+				  
+				  </div>
+                  <div class="section_three_nw_govt">
+                     <div class="section_three_govt_box">
+                      <ul class="section_three_nw_govt_top">
+                           <li><img src="images/partner/worldstartup.png" id="part_pic_edit"></li>
+                           <li><img src="images/partner/IDEA-logo-150x68.png"></li>
+                           <li><img src="images/partner/technoport.png"></li>
+                           <li><img src="images/partner/rocheston.png"></li>
+                           <li id="right_line"><img src="images/partner/descartaes.png"></li>
+                        </ul>
+                     </div>
+                     
+                     <div class="section_three_govt_box">
+                        <ul class="section_three_nw_govt_top">
+                          <li><img src="images/partner/ubi.png" id="part_pic_edit"></li>
+                           <li><img src="images/partner/textlocal.png"></li>
+                           <li><img src="images/partner/zendesk.png"></li>
+                           <li><img src="images/partner/buffer.png"></li>
+                           <li id="right_line"><img src="images/partner/AWS-Activate.png"></li>
+                        </ul>
+                     </div>
+                  </div>
+				  
+				  </div>
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+               </div>
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+			   
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+  <div class="footer-div">
+    <h3>About us</h3>
+    <p>Crescent Innovation & Incubation Council (CIIC) has been established as a Section-8 not for profit company and will act as a “One Stop Shop – Technology Business Incubator (TBI)” for Start-ups. CIIC facilitates entrepreneurial & innovative ecosystem to all the stakeholders including the students, faculty, industry, investors and society at large.</p>
+    <div class="footer-social">
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-facebook"></i></div></a>
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-twitter"></i></div></a>
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-linkedin"></i></div></a>
+        <a href=""><div class="footer-social-icon"><i style="color: #303030; font-size: 12px;" class="fa fa-google-plus"></i></div></a>
+      </div>
+  </div>
+  <div class="footer-div">
+    <h3 style=" ">Contact us</h3>
+    <p style="">Crescent Innovation & Incubation Council (CIIC),<br>
+BS Abdur Rahman Crescent Institute of Science & Technology,<br>
+Seethakathi estate,GST Road,<br>
+Vandalur - 600048<br>
+Email : ceo@ciic.ventures | ceociic@crescent.education<br>
+website: www.ciic.ventures<br>
+Landline: 044 - 22759200; EXTN: 485 & 486</p>
+  </div>
+  <div class="footer-div">
+    <h3 style="">Events & Media</h3>
+    <div class="events-pics">
+      <a href="#"><img src="images/footer1.jpg"></a>
+
+      <a href="#"><img src="images/footer2.jpg"></a>
+      <a href="#"><img src="images/footer3.jpg"></a>
+      <a href="#"><img src="images/footer4.jpg"></a>
+      <a href="#"><img src="images/footer5.jpg"></a>
+      <a href="#"><img src="images/footer6.jpg"></a>
+    </div>
+  </div>
+
+</div>
+<div class="copyright">
+   <p>Copyright <i class="fa fa-copyright"></i> 2019 <a href="http://thestartupbazaar.xyz/" target="_blank">designed by Startup bazaar.</a> All rights reserved. </p>
+</div>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnavnw");
+           if (x.className === "topnavnw") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnavnw";
+           }
+         }
+      </script>
+      <script>
+         // Get the modalnw
+         var modalnw = document.getElementById("myModalnw");
+         
+         // Get the button that opens the modalnw
+         var btn = document.getElementById("myBtnnw");
+         
+         // Get the <span> element that closes the modalnw
+         var span = document.getElementsByClassName("close")[0];
+         
+         // When the user clicks the button, open the modalnw 
+         btn.onclick = function() {
+           modalnw.style.display = "block";
+         }
+         
+         // When the user clicks on <span> (x), close the modalnw
+         span.onclick = function() {
+           modalnw.style.display = "none";
+         }
+         
+         // When the user clicks anywhere outside of the modalnw, close it
+         window.onclick = function(event) {
+           if (event.target == modalnw) {
+             modalnw.style.display = "none";
+           }
+         }
+      </script>
+      <script>
+         var slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlidesnw");
+           var dotnws = document.getElementsByClassName("dotnw");
+           if (n > slides.length) {slideIndex = 1}    
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+           }
+           for (i = 0; i < dotnws.length; i++) {
+               dotnws[i].className = dotnws[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";  
+           dotnws[slideIndex-1].className += " active";
+         }
+      </script>
+      <script type="text/javascript">
+        var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('.countcheck').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.count').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 3000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    a = 1;
+  }
+
+});
+      </script>
+   </body>
+</html>
+
