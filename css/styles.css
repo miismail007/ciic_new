@@ -903,8 +903,8 @@ border: 1px solid black
 
 }
    .footer{
-    padding: 0 100px 0 100px;
-    height: 436px;
+    padding: 35px 100px 35px 100px;
+    /*height: 436px;*/
     background-color: #303030;
     display: flex;
     flex-wrap: wrap;
@@ -913,10 +913,10 @@ border: 1px solid black
     border-bottom:  1px solid #565555
   }
   .footer-div{
-    width: 310px;
+    /*width: 310px;*/
     float: left;
     color: #e1e1e1;
-    height: 285px;
+    /*height: 285px;*/
   }
   .footer-div p{
     line-height: 25px;
