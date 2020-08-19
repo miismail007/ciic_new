@@ -232,7 +232,7 @@ textarea {
     transition: all 0.5s ease-out 0s;
 }
 .banner-area {
-  background: rgba(0, 0, 0, 0) url("../img/gallery/Sign board.JPG") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("../images/Building.jpg") no-repeat scroll center center / cover ;
   position: relative;
   width: 100%;
   z-index: 1;

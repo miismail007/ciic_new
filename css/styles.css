@@ -15,7 +15,8 @@ body,html{margin:0 auto;padding:0 auto;background-color:white;}
 .govt_partner_group{float:left;width:100%;padding-bottom: 3em;}
 
 .header_menunw {
-    float: right;padding:15px 0px;
+    float: right;
+    padding:15px 0px;
     width: 60%;
     text-align: left;
 }
@@ -139,7 +140,9 @@ font-size: 15px;
 .herosectionnw{
 	float:left;width:100%;
  background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/groupphoto.jpg);
-  background-size:100% 100%;height:600px;
+  background-size:100% 100%;
+  height:900px;
+
   }
   
   
@@ -165,8 +168,7 @@ font-size: 15px;
 }
 
 .container123 img {
-  width: 100%;
-  height: 100%;
+  object-fit: contain;
 }
 
 .container123 .btn {
@@ -258,15 +260,18 @@ background-color:transparent;
     vertical-align: middle;
     height: 95px;
     object-fit: contain;
+    border:1px solid #efefef;
+    border-radius: 5px;
 }
 
 .section_three_nw_govt_top li {
-    width: 19.8%;
+    width: 19%;
     float: left;
     display: inline;
     height: 100px;
     padding: 2em 0em 1em 0em;
     vertical-align: middle;
+    margin-right: 5px;
     /*border-right: 1px solid;*/
 }
 
@@ -681,7 +686,7 @@ border: 1px solid black
     font-family:'Roboto' , san-serif;
     font-size: 22px;
     color: #666666;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
 }
 
 
